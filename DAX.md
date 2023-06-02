@@ -37,6 +37,7 @@ Example :
 -  Total sales column : Sum(sales)
 - Average Salary column : Average(salary)
 - Total Profit : Sum(selling value - purchasing value)
+
 **3. Calculated tables** : 
 
 - A calculated table can be defined as a Virtual Table that is created by using a physical Table through DAX (Data Analytic Expression). 

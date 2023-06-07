@@ -218,3 +218,40 @@ GROUPBY(Data,Data[Product Category],"Total Profit",SUMX(CURRENTGROUP() ,Data[Pro
 
 [Refer](https://powerbidocs.com/2020/09/05/dax-groupby-function/)
 # Difference Between Group By And Summarize
+
+
+# DATATABLE 
+Create Static Dataset/ Table in Power BI, that cannot be refreshed but you can modify it.
+
+#### Power BI Data Types as below:
+
+- BOOLEAN (True/False)
+- CURRENCY (Fixed Decimal Number)
+- DATETIME (Date/Time)
+- DOUBLE (Decimal Number)
+- INTEGER (Whole Number)
+- STRING (Text)
+
+#### Syntax 
+```
+DATATABLE (column1, datatype1,
+coulmn2, datatype2,
+{
+ {value1, value2},
+ {value3, value4 }
+}
+)
+```
+
+#### Example
+````
+NewTable_Datatable = 
+DATATABLE ("Name", STRING,
+"Age", INTEGER ,
+{
+ {"Pragya", 23},
+ {"Priya", 45 }
+}
+)
+````
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9916381e-45c3-462e-b1a3-e4468d29dc6e)

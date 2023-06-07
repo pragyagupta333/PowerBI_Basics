@@ -165,8 +165,10 @@ ADDCOLUMNS(<table>, <name>, <expression>[ <name>, <expression>]…)
 
 #### Example
 ````
-NewTable = ADDCOLUMNS(OldTable,"CostAmount",Data[Cost Per Unit]*Data[Quantity])
+NewTable_addcol = 
+ADDCOLUMNS('Product Master',"Product Detail",'Product Master'[Category name] & "-" & 'Product Master'[Product Name])
 ````
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/609951d6-b54c-4a51-8eb5-16efb35da717)
 
 # SUMMARIZE 
 Returns a summary table for the requested totals over a set of groups.

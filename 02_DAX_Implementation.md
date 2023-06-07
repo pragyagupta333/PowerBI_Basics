@@ -47,6 +47,8 @@ Created a  virtual table that you can filter using multiple conditions and use t
 
 Perform sum of sales only for sales amount > 1200  
 
+# Difference Between Calculate And CalculatedTable 
+
 
 # SUM
 Calculates the sum of all numbers in a column.
@@ -190,3 +192,5 @@ SummarizeTable = SUMMARIZE(Data,Data[Product Category], Data[Product Name],
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/dc715098-d6fb-40a1-b479-980fa7378270)
 
 Note : "Data" is already created old table whose columns will be added into new summarizeTable
+
+# Difference Between Group By And Summarize

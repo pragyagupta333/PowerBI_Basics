@@ -193,4 +193,27 @@ SummarizeTable = SUMMARIZE(Data,Data[Product Category], Data[Product Name],
 
 Note : "Data" is already created old table whose columns will be added into new summarizeTable
 
+
+
+# Group By
+
+Returns a table with a set of selected columns.
+
+GROUP BY permits DAX CURRENTGROUP function to be used inside aggregation functions in the extension columns that it adds.
+
+It attempts to reuse the data that has been grouped making it highly performant.
+#### Syntax 
+```
+GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )
+```
+
+#### Example
+````
+NewTable_GroupBy = 
+GROUPBY(Data,Data[Product Category],"Total Profit",SUMX(CURRENTGROUP() ,Data[Profit]))
+````
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/5ac8a3c0-5b24-4050-ba74-4505d02798db)
+
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9dfb0179-35af-4fc0-a7bf-12c5fc889e8e)
+
 # Difference Between Group By And Summarize

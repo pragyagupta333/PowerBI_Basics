@@ -272,3 +272,5 @@ NewTable_Row = ROW("Total Sales", SUM(Data[Sales Amount]),
 "Total CostAmount", SUM(Data[Cost Amount]))
 ````
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/879d60ff-9a5b-4788-8e9b-2cc393d67c25)
+
+# # Difference Between CONCATENATE  And CONCATENATEX

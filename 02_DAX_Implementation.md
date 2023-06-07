@@ -216,4 +216,5 @@ GROUPBY(Data,Data[Product Category],"Total Profit",SUMX(CURRENTGROUP() ,Data[Pro
 
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9dfb0179-35af-4fc0-a7bf-12c5fc889e8e)
 
+[Refer](https://powerbidocs.com/2020/09/05/dax-groupby-function/)
 # Difference Between Group By And Summarize

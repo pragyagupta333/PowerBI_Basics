@@ -153,5 +153,38 @@ CALCULATE (
 - "ALLSELECTED" preserves user-applied filters but removes context filters.
 - "ALLEXCEPT" removes filters from a specific column or table but preserves filters from selected columns or tables.
 
+# ADDCOLUMNS
+ Adds calculated columns to the given table or table expression.
+  
+  It will return a table with all its original columns and the added ones.
+#### Syntax 
+```
+ADDCOLUMNS(<table>, <name>, <expression>[ <name>, <expression>]…)
 
+```
 
+#### Example
+````
+NewTable = ADDCOLUMNS(OldTable,"CostAmount",Data[Cost Per Unit]*Data[Quantity])
+````
+
+# SUMMARIZE 
+Returns a summary table for the requested totals over a set of groups.
+#### Syntax 
+```
+SUMMARIZE (<oldtable>, <groupBy_columnName_1>, <groupBy_columnName_2> …,
+   <name_column>, <expression> …)
+```
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/ef96382d-48e7-4655-ae9d-04b23248bcbe)
+
+#### Example
+````
+SummarizeTable = SUMMARIZE(Data,Data[Product Category], Data[Product Name],
+"Total Profit", sum(Data[Profit]),
+"Total Sales", SUM(Data[Sales Amount]),
+"Total Cost",SUM(Data[Cost Amount])
+)
+````
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/dc715098-d6fb-40a1-b479-980fa7378270)
+
+Note : "Data" is already created old table whose columns will be added into new summarizeTable

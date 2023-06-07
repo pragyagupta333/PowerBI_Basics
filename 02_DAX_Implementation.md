@@ -255,3 +255,20 @@ DATATABLE ("Name", STRING,
 )
 ````
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9916381e-45c3-462e-b1a3-e4468d29dc6e)
+
+# Row
+Row DAX function returns a table with a single row containing values that result from the expressions given to each column.
+#### Syntax 
+```
+ROW(<name>, <expression>, <name>, <expression>.....)
+```
+
+#### Example
+````
+NewTable_Row = ROW("Total Sales", SUM(Data[Sales Amount]),
+
+"Total Profit", SUM(Data[Profit]),
+
+"Total CostAmount", SUM(Data[Cost Amount]))
+````
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/879d60ff-9a5b-4788-8e9b-2cc393d67c25)

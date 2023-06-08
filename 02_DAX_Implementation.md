@@ -367,3 +367,26 @@ countA_Age = COUNTA(NewTable_Datatable[Age])
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
 
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/5d5b0932-dba7-42b8-8f26-4b3a75efef2b)
+
+## CountX
+CountX function counts the number of cells in a column that contains numbers, Dates, strings, but not boolean values
+
+The CountX function does not count empty (or) blank values.
+
+The CountX function does not count boolean values but
+If you include true/false with categorical data and numerical values it will count. The only boolean values does not count.
+
+#### Syntax 
+```
+ CountX (<table_name>,<expression>)
+```
+
+#### Example
+````
+countX_Age = COUNTX(NewTable_Datatable,NewTable_Datatable[Age])
+````
+#### Demo :
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
+
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/360e7d99-a5db-49e6-8e1d-6593779f6f91)
+

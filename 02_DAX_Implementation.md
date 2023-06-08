@@ -49,6 +49,7 @@ Perform sum of sales only for sales amount > 1200
 
 ## Difference Between Calculate And CalculatedTable 
 
+CALCULATETABLE is identical to CALCULATE, except for the result: it returns a table instead of a scalar value.
 
 ## SUM
 Calculates the sum of all numbers in a column.
@@ -81,6 +82,7 @@ TotalSales_SUMX = SUMX(Data, Data[Price Per Unit] * Data[Quantity])
 
 ## Difference SUM and SUMX
 SUM : takes only one column as its argument. Calculates sum value for entire column
+
 #### Syntax 
 ```
 SUM(<Column>)
@@ -112,7 +114,7 @@ CALCULATE(Sum(Orders[Sales]), ALL(Orders[Product Sub-Category]))
 
 
 ## ALLSELECTED
-Returns all the values from the specified column or table, considering only the filters applied by the user and ignoring any context filters from visuals
+Returns all the values from the specified column or table, considering only the filters applied by the user and ignoring any context filters from visuals.
 
 #### Syntax 
 ```
@@ -158,7 +160,7 @@ CALCULATE (
 ## ADDCOLUMNS
  Adds calculated columns to the given table or table expression.
   
-  It will return a table with all its original columns and the added ones.
+ It will return a table with all its original columns and the added ones.
 #### Syntax 
 ```
 ADDCOLUMNS(<table>, <name>, <expression>[ <name>, <expression>]…)

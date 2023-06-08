@@ -411,7 +411,5 @@ countAX_Age = COUNTAX(NewTable_Datatable,NewTable_Datatable[Age])
 
 
 ## Compare Count, CountX, CountA, CountAX.
-COUNT: Counts non-blank cells or rows with non-null values in a table or column.
-COUNTA: Counts all cells or rows, including non-blank and blank cells or rows with any value.
-COUNTX: Applies a calculation to each row and counts the rows where the calculation results in a non-blank value, based on specified criteria.
-COUNTAX: Applies a calculation to each row and counts the rows where the calculation results in a non-blank value, based on specified criteria and an additional expression or column.
+
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/e402d7e5-ef42-43e6-815e-e319218f4c64)

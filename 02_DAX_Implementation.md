@@ -204,6 +204,7 @@ Returns a table with a set of selected columns.
 GROUP BY permits DAX CURRENTGROUP function to be used inside aggregation functions in the extension columns that it adds.
 
 It attempts to reuse the data that has been grouped making it highly performant.
+
 #### Syntax 
 ```
 GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )
@@ -219,8 +220,12 @@ GROUPBY(Data,Data[Product Category],"Total Profit",SUMX(CURRENTGROUP() ,Data[Pro
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9dfb0179-35af-4fc0-a7bf-12c5fc889e8e)
 
 [Refer](https://powerbidocs.com/2020/09/05/dax-groupby-function/)
+
 ## Difference Between Group By And Summarize
 
+DAX GROUPBY function is similar to DAX SUMMARIZE function. However, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds.
+
+[Refer](https://www.mavaanalytics.com/post/summarizecolumns)
 
 ## DATATABLE 
 Create Static Dataset/ Table in Power BI, that cannot be refreshed but you can modify it.
@@ -275,4 +280,41 @@ NewTable_Row = ROW("Total Sales", SUM(Data[Sales Amount]),
 ````
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/879d60ff-9a5b-4788-8e9b-2cc393d67c25)
 
+# CONCATENATE 
+Join two text strings into one text string. 
+
+# Syntax
+```
+CONCATENATE( <Text1>, <Text2> )
+```
+
+# Example 
+```
+CONCATENATE_Result = 
+
+CONCATENATE(Orders[Product Category], Orders[Product Sub-Category])
+```
+
+# CONCATENATEX  
+ Concatenates the result of an expression evaluated for each row in a table using the specified delimiter.
+
+# Syntax
+```
+CONCATENATEX (
+   <table>, <expression>, [<delimiter>], [<OrderBy_Expression1>],[<Order>] …
+)
+```
+
+# Example 
+```
+CONCATENATEX (
+            CALCULATETABLE ( VALUES ( 'Product'[Color] ) ),
+            Product[Color],
+            ", ",             -- Separator (optional)
+            Product[Color],   -- Sorting expression (optional)
+            ASC               -- Sorting direction (optional)
+        )
+```
+
 ## Difference Between CONCATENATE  And CONCATENATEX
+The key difference between CONCATENATE and CONCATENATEX is that CONCATENATE is used to directly concatenate multiple text values, while CONCATENATEX is used to perform calculations on a table or an expression and concatenate the results. CONCATENATEX is particularly useful when you need to concatenate values based on specific conditions or calculations applied to a table.

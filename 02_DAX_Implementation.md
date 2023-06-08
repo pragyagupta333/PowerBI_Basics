@@ -390,3 +390,22 @@ countX_Age = COUNTX(NewTable_Datatable,NewTable_Datatable[Age])
 
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/360e7d99-a5db-49e6-8e1d-6593779f6f91)
 
+## CountAX
+CountAX function counts numbers, strings,dates,boolean values.
+
+CountAX function contain blank data it return blank.
+
+The CountAX function does not count empty (or) blank values.
+#### Syntax 
+```
+COUNTAX(<table_name>,<expression>)
+```
+
+#### Example
+````
+countAX_Age = COUNTAX(NewTable_Datatable,NewTable_Datatable[Age])
+````
+#### Demo :
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
+
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/f36ae3d9-b5e7-4321-a73d-0f1386067d14)

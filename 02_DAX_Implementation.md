@@ -318,3 +318,25 @@ CONCATENATEX (
 
 ## Difference Between CONCATENATE  And CONCATENATEX
 The key difference between CONCATENATE and CONCATENATEX is that CONCATENATE is used to directly concatenate multiple text values, while CONCATENATEX is used to perform calculations on a table or an expression and concatenate the results. CONCATENATEX is particularly useful when you need to concatenate values based on specific conditions or calculations applied to a table.
+
+## Count
+Count function counts the number of cells in a column that contains **numbers,** **Dates,** **strings**, **NOT ****boolean**
+
+The Count function **does not count empty** (or) blank values.
+
+The Count function does not count boolean functions but If you include true/false with categorical data and numerical values it will count. The only boolean values does not count.
+
+The Count function contains blank data it returns blank.
+#### Syntax 
+```
+COUNT(<column>)
+```
+
+#### Example
+````
+count_Age = COUNT(Table[Age])
+````
+#### Demo 
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
+
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9fc6cb77-fb92-41f5-8df2-aefc476d0d0a)

@@ -396,6 +396,8 @@ CountAX function counts numbers, strings,dates,boolean values.
 CountAX function contain blank data it return blank.
 
 The CountAX function does not count empty (or) blank values.
+
+The CountAX function does not count boolean values but If you include true/false with categorical data and numerical values it will count. The only boolean values does not count
 #### Syntax 
 ```
 COUNTAX(<table_name>,<expression>)

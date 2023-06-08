@@ -1,4 +1,7 @@
 # DAX With Implementation
+
+Some Dax Functions are discussed below : 
+
 ## FILTER
 Returns a table that represents a subset of another table or expression. 
 #### Syntax 
@@ -413,3 +416,9 @@ countAX_Age = COUNTAX(NewTable_Datatable,NewTable_Datatable[Age])
 ## Compare Count, CountX, CountA, CountAX.
 
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/e402d7e5-ef42-43e6-815e-e319218f4c64)
+
+## Yet to document : 
+- min,mina,minx,etc
+- relational Dax
+- time intelligence
+- Reference For these : [Here](https://powerbidocs.com/power-bi-dax-functions/)

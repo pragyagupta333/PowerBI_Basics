@@ -340,3 +340,30 @@ count_Age = COUNT(Table[Age])
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
 
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9fc6cb77-fb92-41f5-8df2-aefc476d0d0a)
+
+## CountA
+The COUNTA function counts the number of cells in a column that are not empty for numbers, Dates, strings, and boolean
+
+The CountA function counts the number of cells in a column.
+
+The CountA function does not count empty (or) blank values.
+
+The Counta function counts boolean functions.
+
+The CountA function counts numbers, strings, dates, boolean.
+The CountA function contains blank data it returns a blank.
+
+#### Syntax 
+```
+COUNTA(<column>)
+```
+
+#### Example
+````
+countA_Age = COUNTA(NewTable_Datatable[Age])
+````
+
+#### Demo 
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
+
+![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/5d5b0932-dba7-42b8-8f26-4b3a75efef2b)

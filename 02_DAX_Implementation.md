@@ -320,7 +320,7 @@ CONCATENATEX (
 The key difference between CONCATENATE and CONCATENATEX is that CONCATENATE is used to directly concatenate multiple text values, while CONCATENATEX is used to perform calculations on a table or an expression and concatenate the results. CONCATENATEX is particularly useful when you need to concatenate values based on specific conditions or calculations applied to a table.
 
 ## Count
-Count function counts the number of cells in a column that contains **numbers,** **Dates,** **strings**, **NOT ****boolean**
+Count function counts the number of cells in a column that contains **numbers,** **Dates,** **strings**, **NOT** **boolean**
 
 The Count function **does not count empty** (or) blank values.
 
@@ -342,15 +342,12 @@ count_Age = COUNT(Table[Age])
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/9fc6cb77-fb92-41f5-8df2-aefc476d0d0a)
 
 ## CountA
-The COUNTA function counts the number of cells in a column that are not empty for numbers, Dates, strings, and boolean
+The COUNTA function counts the number of cells in a column that are not empty for numbers, Dates, strings, **and** **boolean**
 
 The CountA function counts the number of cells in a column.
 
-The CountA function does not count empty (or) blank values.
+The CountA function **does not count empty** (or) blank values.
 
-The Counta function counts boolean functions.
-
-The CountA function counts numbers, strings, dates, boolean.
 The CountA function contains blank data it returns a blank.
 
 #### Syntax 
@@ -369,9 +366,9 @@ countA_Age = COUNTA(NewTable_Datatable[Age])
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/5d5b0932-dba7-42b8-8f26-4b3a75efef2b)
 
 ## CountX
-CountX function counts the number of cells in a column that contains numbers, Dates, strings, but not boolean values
+CountX function counts the number of cells in a column that contains numbers, Dates, strings, but **not boolean values**
 
-The CountX function does not count empty (or) blank values.
+The CountX function **does not count empty** (or) blank values.
 
 The CountX function does not count boolean values but
 If you include true/false with categorical data and numerical values it will count. The only boolean values does not count.
@@ -391,11 +388,11 @@ countX_Age = COUNTX(NewTable_Datatable,NewTable_Datatable[Age])
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/360e7d99-a5db-49e6-8e1d-6593779f6f91)
 
 ## CountAX
-CountAX function counts numbers, strings,dates,boolean values.
+CountAX function counts numbers, strings,dates,**boolean values**.
 
 CountAX function contain blank data it return blank.
 
-The CountAX function does not count empty (or) blank values.
+The CountAX function **does not count empty** (or) blank values.
 
 The CountAX function does not count boolean values but If you include true/false with categorical data and numerical values it will count. The only boolean values does not count
 #### Syntax 
@@ -411,3 +408,10 @@ countAX_Age = COUNTAX(NewTable_Datatable,NewTable_Datatable[Age])
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/d2c23484-e2d0-42d5-9aaa-8ae5349ce71f)
 
 ![image](https://github.com/pragyagupta333/PowerBI_Basics/assets/125549428/f36ae3d9-b5e7-4321-a73d-0f1386067d14)
+
+
+## Compare Count, CountX, CountA, CountAX.
+COUNT: Counts non-blank cells or rows with non-null values in a table or column.
+COUNTA: Counts all cells or rows, including non-blank and blank cells or rows with any value.
+COUNTX: Applies a calculation to each row and counts the rows where the calculation results in a non-blank value, based on specified criteria.
+COUNTAX: Applies a calculation to each row and counts the rows where the calculation results in a non-blank value, based on specified criteria and an additional expression or column.
